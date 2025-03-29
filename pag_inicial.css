@@ -1,0 +1,334 @@
+body {
+    background-color: #faf0ca;
+    color: black;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    font-family: "Playwrite IT Moderna", sans-serif;
+}
+
+.header__logo {
+    color: #0d3b66;
+}
+
+.header {
+    display: flex;
+    background-color: #ffee93; 
+    padding: 15px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+    #nav__menulateral {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#nav__menulateral {
+    background-color: #ffc09f;
+    padding: 20px 1em;
+    grid-column: 1;
+    box-sizing: border-box;
+    height: 170vh;
+    width: 280px;
+    padding: 5px 1em;
+    border-right: 2px solid #0d3b66;
+    font-size: 15px;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    align-self: start;
+    color: black;
+}
+
+#nav__menulateral ul {
+    list-style: none;
+}
+
+#nav__menulateral > ul > li:first-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+#nav__menulateral ul li.active {
+    color: #001f3d;
+    font-weight: bold;
+}
+
+#nav__menulateral ul li.active a svg {
+    fill: #001f3d;
+}
+
+#nav__menulateral a, #nav__menulateral .setaprabaixo-btn {
+    border-radius: .5em;
+    padding: .85em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.setaprabaixo-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+#nav__menulateral svg {
+    flex-shrink: 0;
+}
+
+#nav__menulateral a span, #nav__menulateral .setaprabaixo-btn {
+    flex-grow: 1;
+}
+
+#nav__menulateral img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+#nav__menu-home {
+    margin-right: 120px;
+}
+
+
+main {
+    background-color: #faf0ca;
+    padding: 20px;
+    grid-column: 3;
+    
+}
+
+.fotoinicial {
+    width: 100%;
+    height: 100%;
+}
+
+.header__logo {
+    font-size:  30px;
+    font-weight: 700;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.header__nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 22px;
+    margin-right: 10px;
+}
+.header__nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* From Uiverse.io by adamgiebl */ 
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    color: #FFC09F;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #FFC09F;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 0 #FFC09F;
+}
+
+.btn:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #FFC09F;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+
+.titulo {
+    font-size: 38px;
+    text-align: center;
+    margin: 30px 0;
+    color: #0d3b66;
+}
+
+
+
+/*
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.menu-icon {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+}*/
+
+/*.nav-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.section-itens {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+section ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+} */
+
+.gato-icon {
+    width: 45px;
+    height: auto;
+}
+
+.cao-icon {
+    width: 45px;
+    height: auto;
+}
+
+.depoimento-icon {
+    width: 45px;
+    height: auto;
+}
+
+.cartao-icon {
+    width: 45px;
+    height: auto;
+}
+
+.maos-icon {
+    width: 45px;
+    height: auto;
+}
+
+/*.search {
+    display: flex;
+    margin: 20px auto;
+    width: 100%;
+    padding: 5px 10px;
+    align-items: center;
+    border: 1px solid #abaaaa;
+    border-radius: 20px;
+    background-color: #f6f5f5;
+}
+
+#pesquisaInput {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}*/
+
+
+.lupa {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.lupa-icon {
+    font-family: "Material Symbols Outlined";
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.pesquisa-input {
+    width: 0;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: width 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lupa.active .pesquisa-input {
+    width: 150px;
+    opacity: 1;
+    pointer-events: auto;
+    margin-left: 10px;
+}
+/*
+section ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+section ul li a:hover {
+    color: #555;
+}*/
+
+.container-pets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pet {
+    text-align: center;
+}
+
+.pet img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.status-adotado {
+    color: red;
+    font-weight: bold;
+}
+
+.status-disponivel {
+    color: green;
+    font-weight: bold;
+}

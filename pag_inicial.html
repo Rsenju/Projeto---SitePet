@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFinder BR</title>
+      <!-- <img src="svg_imagens/foto-inicial.png" alt="Uma foto com 4 pessoas, cada uma segurando um animal" class="fotoinicial"> -->
+    <link rel="stylesheet" href="pag_inicial.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">PetFinder BR</div>
+
+        <nav class="header__nav">
+            <ul>
+                <li>
+                    <a href="seja_um_padrinho.html" target="_blank" class="btn">Apadrinhe</a>
+                </li>
+            </ul>              
+        </nav>
+    </header>
+
+     <div class="grid-container">
+        <nav id="nav__menulateral">
+            <ul class="nav__menu-ul">
+                <li class="active">
+                    <a href="pag_inicial.html" target="_blank" id="nav__menu-home">
+                        <img src="svg.img/home.svg" alt="icone de home">Home
+                    </a>
+                </li>
+
+                <li>
+                    <img src="svg.img/pata-animal.svg" alt="pata de cachorro">
+                    <span>Pets</span>
+                    <button class="setaprabaixo-btn">
+                        <img src="svg.img/setabaixo-0.svg" alt="icone seta para baixo">
+                    </button>
+                        <ul class="nav__sub-menu">
+                            <li>
+                                <a href="gatos.html" target="_blank" id="nav__menu-gatos">
+                                <img src="svg.img/cat-icon.svg" alt="icone de gato">Gatos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="caes.html" target="_blank" id="nav__menu-caes">
+                                <img src="svg.img/dog.svg" alt="icone de cachorro">Cães
+                                </a>
+                            </li>
+                        </ul>
+                </li>
+
+                <li class="nav__menu-parceiros">
+                    <img src="svg.img/maos-01.svg" alt="icone de mãos dadas">
+                    <span>Parceiros</span>
+                    <button class="setaprabaixo-btn">
+                        <img src="svg.img/setabaixo-0.svg" alt="icone seta para baixo">
+                    </button>
+                        <ul>
+                            <li class="bem-estar">
+                                <img src="svg.img/mao-coracao.svg" alt="">
+                                <span>Bem Estar</span>
+                                <button class="setaprabaixo-btn">
+                                    <img src="svg.img/setabaixo-0.svg" alt="icone seta para baixo">
+                                </button>
+                                    <ul class="nav__sub-menu">
+                                        <li><a href="#">Adestramento</a></li>
+                                        <li><a href="#">Banho e Tosa</a></li>
+                                        <li><a href="#">Daycare</a></li> <!--Creche-->
+                                        <li><a href="#">Hospedagem</a></li>
+                                        <li><a href="#">Pet Shop</a></li>
+                                        <li><a href="#">Pet Sitter</a></li> <!--Baba-->
+                                    </ul>
+                            </li>
+                            <li class="nav__menu-saude">
+                                <img src="svg.img/hospital.svg" alt="icone hospital">
+                                <span>Saúde</span>
+                                <button class="setaprabaixo-btn">
+                                    <img src="svg.img/setabaixo-0.svg" alt="icone seta para baixo">
+                                </button>
+                                    <ul class="nav__sub-menu">
+                                        <li>Clinica 24h</li>
+                                        <li>Clinica Veterinaria</li>
+                                        <li>Plano de Saúde</li>
+                                        <li>SUS Animal</li>
+                                    </ul>
+                            </li>
+                        </ul>
+                </li>
+
+                <li>
+                    <a href="loja.html" target="_blank" id="nav__menu-loja">
+                        <img src="svg.img/carrinho-compras.svg" alt="carrinho de compras">
+                        <span>Loja</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="depoimentos.html" target="_blank" id="nav__menu-depoimentos">
+                        <img src="svg.img/chat.svg" alt="balão de conversa">
+                        <span>Depoimentos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sobre_nos.html" target="_blank" id="nav__menu-nos">
+                        <img src="svg.img/grupo.svg" alt="icone com duas pessoas">
+                        <span>Quem apronta tudo isso</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+            
+        <section>
+            <div class="lupa">
+                <span class="material-symbols-outlined lupa-icon" onclick="togglePesquisa()">search</span>
+                <input type="text" id="pesquisa" class="pesquisa-input" placeholder="Pesquisar..." onkeyup="searchFunction()">
+            </div> 
+        </section>
+
+        <main>
+            <h2 class="titulo">Adote amor, adote um pet</h2>
+
+            <section class="section-pets">
+                <div class="container-pets">
+                    <div class="pet">
+                        <a href="gatos.html" target="_blank">
+                            <img src="imagens/ava.png">
+                        </a>
+                        <p>Ava<br>
+                            Idade: 2 meses<br>
+                            Sexo: Fêmea
+                        </p>
+                            <p>Status: <span id="status-text" class="status-disponivel">Disponível</span></p>
+                            <button id="editar-status" onclick="verificarAdmin()">Editar Status</button>
+                            <div id="status-opcoes" style="display: none;">
+                                <select id="status-select" onchange="atualizarStatus()">
+                                    <option value="adotado">Adotado</option>
+                                    <option value="disponivel">Disponível</option>
+                                </select>
+                    </div>
+
+                    <div class="pet">
+                        <a href="gatos.html" target="_blank">
+                            <img src="imagens/ava.png">
+                        </a>
+                        <p>Ava<br>
+                            Idade: 2 meses<br>
+                            Sexo: Fêmea
+                        </p>
+                            <p>Status: <span id="status-text" class="status-disponivel">Disponível</span></p>
+                            <button id="editar-status" onclick="verificarAdmin()">Editar Status</button>
+                            <div id="status-opcoes" style="display: none;">
+                                <select id="status-select" onchange="atualizarStatus()">
+                                    <option value="adotado">Adotado</option>
+                                    <option value="disponivel">Disponível</option>
+                                </select>
+                    </div>
+
+                    <div class="pet">
+                        <a href="gatos.html" target="_blank">
+                            <img src="imagens/ava.png">
+                        </a>
+                        <p>Ava<br>
+                            Idade: 2 meses<br>
+                            Sexo: Fêmea
+                        </p>
+                            <p>Status: <span id="status-text" class="status-disponivel">Disponível</span></p>
+                            <button id="editar-status" onclick="verificarAdmin()">Editar Status</button>
+                            <div id="status-opcoes" style="display: none;">
+                                <select id="status-select" onchange="atualizarStatus()">
+                                    <option value="adotado">Adotado</option>
+                                    <option value="disponivel">Disponível</option>
+                                </select>
+                    </div>
+
+                    <div class="pet">
+                        <a href="gatos.html" target="_blank">
+                            <img src="imagens/ava.png">
+                        </a>
+                        <p>Ava<br>
+                            Idade: 2 meses<br>
+                            Sexo: Fêmea
+                        </p>
+                            <p>Status: <span id="status-text" class="status-disponivel">Disponível</span></p>
+                            <button id="editar-status" onclick="verificarAdmin()">Editar Status</button>
+                            <div id="status-opcoes" style="display: none;">
+                                <select id="status-select" onchange="atualizarStatus()">
+                                    <option value="adotado">Adotado</option>
+                                    <option value="disponivel">Disponível</option>
+                                </select>
+                    </div>
+                
+                    <div class="pet">
+                        <a href="caes.html" target="_blank">
+                            <img src="imagens/teste (2).png" alt="Cão piscando com um olho e olhando para a frente" class="fotocaoteste">
+                        </a>
+                        <p>Nome do pet<br>
+                            Idade: 1 ano<br>
+                            Sexo: Macho
+                        </p>
+                            <p>Status: <span id="status-text" class="status-disponivel">Disponível</span></p>
+                            <button id="editar-status" onclick="verificarAdmin()">Editar Status</button>
+                            <div id="status-opcoes" style="display: none;">
+                                <select id="status-select" onchange="atualizarStatus()">
+                                    <option value="adotado">Adotado</option>
+                                    <option value="disponivel">Disponível</option>
+                                </select>
+                            </div>
+                    </div>
+
+                    <div class="pet">
+                        <a href="caes.html" target="_blank">
+                            <img src="imagens/teste (2).png" alt="Cão piscando com um olho e olhando para a frente" class="fotocaoteste">
+                        </a>
+                        <p>Nome do pet<br>
+                            Idade: 1 ano<br>
+                            Sexo: Macho
+                        </p>
+                            <p>Status: <span id="status-text" class="status-disponivel">Disponível</span></p>
+                            <button id="editar-status" onclick="verificarAdmin()">Editar Status</button>
+                            <div id="status-opcoes" style="display: none;">
+                                <select id="status-select" onchange="atualizarStatus()">
+                                    <option value="adotado">Adotado</option>
+                                    <option value="disponivel">Disponível</option>
+                                </select>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Galeria com fotos dos pets-->
+
+    <!-- Jornal com news dos parceiros, descontos, castrações, vacinação-->
+</body>
+
+<!--
+<footer>
+    <ul>
+        <li class="logo-site-footer">#
+            <img src="#" alt="logo do site">
+        </li>
+        <li class="sobre-nos"><a href="sobre_nos.html" target="_blank">Sobre Nós</a></li>
+        <li class="informacoes-uteis"><a href="informacoes_uteis.html" target="_blank">Informações Úteis</a></li>
+        <li class="ajuda"><a href="ajuda.html" target="_blank">Ajuda</a></li>
+    </ul>
+</footer>
+
+</html>
+
+-->
