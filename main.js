@@ -23,3 +23,10 @@ function atualizarStatus() {
         statusText.className = "status-disponivel";
     }
 }
+
+function alternarSubmenu(botao) {
+  const submenu = botao.closest('li').querySelector('ul.submenu');
+  if (submenu) {
+    submenu.classList.toggle('ativo');
+  }
+}
