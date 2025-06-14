@@ -1,0 +1,87 @@
+# 🐾 PetFinder BR – Encontre seu novo melhor amigo
+
+**PetFinder BR** é um projeto pessoal que nasce com o objetivo de ser muito mais do que um simples site de adoção de animais. Ele é o embrião de uma plataforma completa dedicada ao mundo pet, conectando pessoas, ONGs, petshops, clínicas veterinárias e amantes de animais em um só lugar.
+
+### 💡 Sobre o projeto
+
+Este é o início de uma ideia que visa, em larga escala, reunir:
+
+* ONGs de adoção de animais de toda um região ou ate brasil;
+* Petshops, serviços de banho e tosa;
+* Clínicas e hospitais veterinários;
+* Links diretos para produtos essenciais dos pets (Amazon, Shopee, Mercado Livre, etc);
+* Contato com babás de pets, hotéis e daycare;
+* Um blog com conteúdos informativos e curiosidades sobre o mundo animal.
+
+### 👩‍💻 Tecnologias utilizadas
+
+* **HTML5**
+* **CSS3**
+* **JavaScript (puro)**
+* Responsivo com **Media Queries**
+* Layout com **CSS Grid** e **Flexbox**
+
+### 📌 Funcionalidades atuais
+
+* Navegação lateral com submenu interativo
+* Cartões de pets com status de adoção
+* Acesso administrativo com edição de status (simulado via senha)
+* Botão de busca animado com input expansível
+* Interface amigável com foco em acessibilidade e usabilidade
+
+### 🚧 Próximos passos
+
+* Integração com banco de dados para armazenar e gerenciar informações dos pets
+* Sistema de login para ONGs, tutores e parceiros
+* Página de depoimentos e blog ativo
+* Implementação de filtros e busca avançada
+* Cadastro de parceiros e prestadores de serviço pet
+
+### ✨ Motivação
+
+Esse projeto é uma ideia que carrego com muito carinho, com o sonho de vê-lo funcionando em grande escala e fazendo a diferença na vida dos animais e das pessoas. PetFinder BR é sobre amor, cuidado e conexão.
+
+---
+
+# 🐾 PetFinder BR – Find Your New Best Friend
+
+**PetFinder BR** is a personal project born from a desire to go beyond a simple pet adoption site. It’s the beginning of a platform designed to bring together people, NGOs, pet stores, veterinary clinics, and animal lovers all in one place.
+
+### 💡 About the Project
+
+This project aims to eventually become a large-scale platform that connects:
+
+* Animal adoption NGOs from an entire region or even across Brazil
+* Pet shops and grooming services
+* Veterinary clinics and hospitals
+* Essential pet products from Amazon, Shopee, Mercado Livre, and more
+* Pet babysitters, hotels, and daycare services
+* A blog with helpful information and fun facts about the pet world
+
+### 👩‍💻 Technologies Used
+
+* **HTML5**
+* **CSS3**
+* **JavaScript (Vanilla)**
+* Responsive layout with **Media Queries**
+* Layout structured using **CSS Grid** and **Flexbox**
+
+### 📌 Current Features
+
+* Sidebar navigation with interactive submenu
+* Pet cards with adoption status display
+* Admin access to edit pet status (simulated with a password prompt)
+* Animated search button with expandable input
+* User-friendly interface with a focus on accessibility and usability
+
+### 🚧 Next Steps
+
+* Connect to a database to manage pet and user information
+* User login for NGOs, guardians, and partners
+* Testimonial and blog pages
+* Advanced search and filtering features
+* Partner registration and service provider pages
+
+### ✨ Motivation
+
+This is a passion project, built with care and purpose. My dream is to see this idea grow and make a real difference in the lives of animals and the people who care for them. PetFinder BR is about love, care, and connection.
